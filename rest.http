@@ -1,0 +1,25 @@
+GET http://localhost:3000/books
+
+### create a book
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title":"Rick Dad, Poor Dad",
+    "author":"Robert T kiosaki",
+    "summary":"Finance management book"
+}
+
+### Get a single book
+GET http://localhost:3000/books/id
+
+### Update a single book
+PATCH  http://localhost:3000/books/id
+
+### Delete a single book
+DELETE  http://localhost:3000/books/id
+
+
+### Invalid
+GET  http://localhost:3000/
+ 
