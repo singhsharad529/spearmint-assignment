@@ -44,7 +44,7 @@ This repository contains a Node.js application that implements CRUD operations f
 
 **For more clarification visit rest.http file.**
 
-#### To start setting up the project
+## To start setting up the project
 
 Step 1: Clone the repo
 
