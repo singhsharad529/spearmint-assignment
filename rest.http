@@ -5,9 +5,9 @@ POST http://localhost:3000/books
 Content-Type: application/json
 
 {
-    "title":"Alchemist",
-    "author":"Don't Know",
-    "summary":"Motivational"
+    "title": "Rich Dad, Poor Dad",
+    "author": "Robert T kiosaki",
+    "summary": "Finance management book"
 }
 
 ### Get a single book
@@ -24,7 +24,7 @@ Content-Type: application/json
 }
 
 ### Delete a single book
-DELETE  http://localhost:3000/books/654b8e1f24ffce486c58b79d
+DELETE  http://localhost:3000/books/654b8cffd95972b0e86a218f
 
 
 ### Invalid

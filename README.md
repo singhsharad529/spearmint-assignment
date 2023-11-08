@@ -74,6 +74,8 @@ Step 4: Start the API by
 npm start
 ```
 
+## Deployment:
+
 ## Author
 
 - [**Sharad Kumar Singh**](https://singhsharad529.github.io/sharad-portfolio/)
