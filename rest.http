@@ -11,13 +11,20 @@ Content-Type: application/json
 }
 
 ### Get a single book
-GET http://localhost:3000/books/id
+GET http://localhost:3000/books/654a75ef186bcc5110eee544
 
 ### Update a single book
-PATCH  http://localhost:3000/books/id
+PATCH  http://localhost:3000/books/654a772c186bcc5110eee546
+Content-Type: application/json
+
+{
+    "title":"Rick Dad, Poor Dad",
+    "author":"Robert T Kiosak",
+    "summary":"How to manage your money"
+}
 
 ### Delete a single book
-DELETE  http://localhost:3000/books/id
+DELETE  http://localhost:3000/books/654b6b635c6a7d56f6bf69bd
 
 
 ### Invalid

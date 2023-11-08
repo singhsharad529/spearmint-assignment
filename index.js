@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-
+const creatError = require('http-errors')
 const app = express();
 
 const booksRoutes = require("./Routes/books.route");
@@ -27,9 +27,7 @@ app.use("/books", booksRoutes);
 
 //for invalid urls
 app.use((req, res, next) => {
-  const err = new Error("Not Found");
-  err.status = 404;
-  next(err);
+  next(creatError(404, 'Not Found'))
 });
 
 //Error handler
