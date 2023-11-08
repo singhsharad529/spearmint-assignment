@@ -5,26 +5,26 @@ POST http://localhost:3000/books
 Content-Type: application/json
 
 {
-    "title":"Rick Dad, Poor Dad",
-    "author":"Robert T kiosaki",
-    "summary":"Finance management book"
+    "title":"Alchemist",
+    "author":"Don't Know",
+    "summary":"Motivational"
 }
 
 ### Get a single book
-GET http://localhost:3000/books/654a75ef186bcc5110eee544
+GET http://localhost:3000/books/654b8e1f24ffce486c58b79d
 
 ### Update a single book
-PATCH  http://localhost:3000/books/654a772c186bcc5110eee546
+PATCH  http://localhost:3000/books/654b8e1f24ffce486c58b79ds
 Content-Type: application/json
 
 {
-    "title":"Rick Dad, Poor Dad",
-    "author":"Robert T Kiosak",
+    "title":"Rich Dad, Poor Dad",
+    "author":"Robert sir",
     "summary":"How to manage your money"
 }
 
 ### Delete a single book
-DELETE  http://localhost:3000/books/654b6b635c6a7d56f6bf69bd
+DELETE  http://localhost:3000/books/654b8e1f24ffce486c58b79d
 
 
 ### Invalid

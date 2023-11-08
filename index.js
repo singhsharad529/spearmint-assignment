@@ -1,6 +1,7 @@
 const express = require("express");
-const mongoose = require("mongoose");
-const creatError = require('http-errors')
+const creatError = require("http-errors");
+const dotenv = require("dotenv").config();
+
 const app = express();
 
 const booksRoutes = require("./Routes/books.route");
@@ -9,25 +10,15 @@ const booksRoutes = require("./Routes/books.route");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-//Mongo Connection
-mongoose
-  .connect("mongodb+srv://cluster0.x5agcuu.mongodb.net/", {
-    dbName: "RestApi_brewapps",
-    user: "singhsharad529",
-    pass: "sharad123",
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    console.log("Mongo Connected...");
-  });
+//Initialize db
+require("./initDB")();
 
 //routes to access books endpoints
 app.use("/books", booksRoutes);
 
 //for invalid urls
 app.use((req, res, next) => {
-  next(creatError(404, 'Not Found'))
+  next(creatError(404, "Not Found"));
 });
 
 //Error handler
@@ -41,6 +32,8 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("Server started on port 3000...");
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`Server started on port ${PORT}...`);
 });
