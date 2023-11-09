@@ -1,11 +1,14 @@
 const express = require("express");
 const creatError = require("http-errors");
 const dotenv = require("dotenv").config();
+const cors = require("cors");
 
 const app = express();
 
-const booksRoutes = require("./Routes/books.route");
+const stockRoutes = require("./Routes/stock.route");
 
+//Middleware for cors policy
+app.use(cors());
 //Parsing body string into json
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -14,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 require("./initDB")();
 
 //routes to access books endpoints
-app.use("/books", booksRoutes);
+app.use("/stocks", stockRoutes);
 
 //for invalid urls
 app.use((req, res, next) => {
@@ -32,7 +35,7 @@ app.use((err, req, res, next) => {
   });
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => {
   console.log(`Server started on port ${PORT}...`);

@@ -1,32 +1,18 @@
-GET http://localhost:3000/books
+GET http://localhost:9000/stocks
 
 ### create a book
-POST http://localhost:3000/books
+POST http://localhost:9000/stocks
 Content-Type: application/json
 
 {
-    "title": "Rich Dad, Poor Dad",
-    "author": "Robert T kiosaki",
-    "summary": "Finance management book"
+    "stock":"MRF",
+    "price":99000.35
 }
 
 ### Get a single book
-GET http://localhost:3000/books/654b8e1f24ffce486c58b79d
+GET http://localhost:9000/stocks/654ce869abe42d4dd28b5f33
 
-### Update a single book
-PATCH  http://localhost:3000/books/654b8e1f24ffce486c58b79ds
-Content-Type: application/json
-
-{
-    "title":"Rich Dad, Poor Dad",
-    "author":"Robert sir",
-    "summary":"How to manage your money"
-}
-
-### Delete a single book
-DELETE  http://localhost:3000/books/654b8cffd95972b0e86a218f
-
-
+ 
 ### Invalid
-GET  http://localhost:3000/
+GET  http://localhost:9000/
  

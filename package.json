@@ -1,5 +1,5 @@
 {
-  "name": "brewapps-assignment",
+  "name": "spearmint-assignment",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,10 +10,11 @@
   "author": "Sharad Kumar Singh",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "http-errors": "^2.0.0",
-    "mongoose": "^8.0.0"
+    "mongoose": "^6.10.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
