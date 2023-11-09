@@ -34,7 +34,7 @@ This repository contains a Node.js application that implements CRUD operations f
 Step 1: Clone the repo
 
 ```bash
-git clone https://github.com/singhsharad529/brewapps-assignment.git
+git clone https://github.com/singhsharad529/spearmint-assignment.git
 ```
 
 Step 2: cd into the cloned repo and run:
