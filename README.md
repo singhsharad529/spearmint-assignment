@@ -10,37 +10,22 @@ This repository contains a Node.js application that implements CRUD operations f
 
 ## Available API Endpoints:
 
-### Get all books ( GET request )
+### Get all stocks ( GET request )
 
-- `http://localhost:3000/books`
+- `http://localhost:3000/stocks`
 
-### Create a new book( POST request )
+### Create a new stock( POST request )
 
-- `http://localhost:3000/books`
+- `http://localhost:3000/stocks`
 
 {
-"title": "Wings of Fire",
-"author": "Dr.A.P.J Abdul Kalam",
-"summary": "Biography of Dr.A.P.J Abdul Kalam"
+"stock": "HDFC",
+"price": 1400,
 }
 
 ### Get a single book by id( GET request )
 
-- `http://localhost:3000/books/654b8e1f24ffce486c58b79d`
-
-### Update a book by id( PATCH request )
-
-- `http://localhost:3000/books/654b8e1f24ffce486c58b79ds`
-
-{
-"title":"Rich Dad, Poor Dad",
-"author":"Robert T Kiosaki",
-"summary":"Money Management"
-}
-
-### Delete a book by id( DELETE request )
-
-- `http://localhost:3000/books/654b8e1f24ffce486c58b79ds`
+- `http://localhost:3000/stocks/654b8e1f24ffce486c58b79d`
 
 **For more clarification visit rest.http file.**
 
